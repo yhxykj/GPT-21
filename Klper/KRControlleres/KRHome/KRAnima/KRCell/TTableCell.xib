@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7T2-fZ-sVj" customClass="TTableCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="304"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往事流转在你的眼眸#国风#清冷感#大坨云" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4on-rL-TDe">
+                        <rect key="frame" x="0.0" y="260" width="215" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36.04" id="lIS-BP-up3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUI-8e-JIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pvP-81-4zz">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="253"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-YL-iw0">
+                        <rect key="frame" x="175" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39.98" id="hWr-XO-qYw"/>
+                            <constraint firstAttribute="height" constant="39.99" id="bwz-7g-z0j"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="type_zaFgfg"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7LZ-bg-PD3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MSA-YL-iw0" secondAttribute="trailing" id="TDH-EF-8na"/>
+                <constraint firstAttribute="bottom" secondItem="4on-rL-TDe" secondAttribute="bottom" constant="8.01" id="JR3-Sp-uki"/>
+                <constraint firstAttribute="trailing" secondItem="nUI-8e-JIQ" secondAttribute="trailing" id="20F-l1-J0Z"/>
+                <constraint firstItem="pvP-81-4zz" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="VV3-Lf-Von"/>
+                <constraint firstItem="nUI-8e-JIQ" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="fNL-PS-TmQ"/>
+                <constraint firstItem="MSA-YL-iw0" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="EQR-zI-wgd"/>
+                <constraint firstItem="4on-rL-TDe" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="1tu-eY-rJw"/>
+                <constraint firstItem="pvP-81-4zz" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="oeN-xj-ZjW"/>
+                <constraint firstItem="4on-rL-TDe" firstAttribute="top" secondItem="pvP-81-4zz" secondAttribute="bottom" constant="6.97" id="y1c-eN-CEM"/>
+                <constraint firstAttribute="trailing" secondItem="pvP-81-4zz" secondAttribute="trailing" id="k5x-BU-UTb"/>
+                <constraint firstAttribute="bottom" secondItem="nUI-8e-JIQ" secondAttribute="bottom" constant="51.01" id="5d8-AZ-i1I"/>
+                <constraint firstItem="nUI-8e-JIQ" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="r5K-t3-xtk"/>
+                <constraint firstAttribute="trailing" secondItem="4on-rL-TDe" secondAttribute="trailing" id="d4Z-Bt-xac"/>
+            </constraints>
+            <size key="customSize" width="215" height="304"/>
+            <connections>
+                <outlet property="bgImage" destination="pvP-81-4zz" id="aw9-Tu-hGV"/>
+                <outlet property="bgView" destination="nUI-8e-JIQ" id="XyE-Wu-dNc"/>
+                <outlet property="descLabel" destination="4on-rL-TDe" id="lvY-yK-pKF"/>
+            </connections>
+            <point key="canvasLocation" x="257.25190839694653" y="78.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="type_zaFgfg" width="18" height="18"/>
+    </resources>
+</document>

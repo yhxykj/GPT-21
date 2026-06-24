@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="CBasicNewsController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="aS3-dd-z57" id="6ge-KI-V8f"/>
+                <outlet property="picImage" destination="jM3-Is-E5c" id="Aue-Cg-oLN"/>
+                <outlet property="savebutton" destination="Zqz-EW-689" id="78W-6Q-aDu"/>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp3-qN-tGc">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahX-vi-bng">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.95" id="wmi-Zy-g3F"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="jjzyShowAssitant"/>
+                            <connections>
+                                <action selector="backAction:" destination="uFB-kS-9V7" eventType="touchUpInside" id="3Ke-Mj-FVV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqz-EW-689">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75.01" id="ZhV-4F-MHf"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="quickloginItemdataPath"/>
+                            <connections>
+                                <action selector="saveAction:" destination="uFB-kS-9V7" eventType="touchUpInside" id="vjx-Jo-0bQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Zqz-EW-689" firstAttribute="top" secondItem="rp3-qN-tGc" secondAttribute="top" id="IiH-fG-uvv"/>
+                        <constraint firstAttribute="trailing" secondItem="Zqz-EW-689" secondAttribute="trailing" constant="10.02" id="JZJ-4J-6os"/>
+                        <constraint firstItem="ahX-vi-bng" firstAttribute="top" secondItem="rp3-qN-tGc" secondAttribute="top" id="1bP-5j-4Lp"/>
+                        <constraint firstAttribute="height" constant="44.01" id="viD-Qs-kzv"/>
+                        <constraint firstAttribute="bottom" secondItem="ahX-vi-bng" secondAttribute="bottom" id="mKD-iB-eLj"/>
+                        <constraint firstAttribute="bottom" secondItem="Zqz-EW-689" secondAttribute="bottom" id="md9-Pm-N5G"/>
+                        <constraint firstItem="ahX-vi-bng" firstAttribute="leading" secondItem="rp3-qN-tGc" secondAttribute="leading" id="xnT-ql-iaf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aS3-dd-z57">
+                    <rect key="frame" x="15" y="114" width="363" height="467"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-Is-E5c">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="467"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jM3-Is-E5c" secondAttribute="bottom" id="wxT-W9-Qxr"/>
+                        <constraint firstAttribute="height" constant="467.02" id="Kuw-o5-xS9"/>
+                        <constraint firstItem="jM3-Is-E5c" firstAttribute="leading" secondItem="aS3-dd-z57" secondAttribute="leading" id="J5x-sL-9I0"/>
+                        <constraint firstAttribute="trailing" secondItem="jM3-Is-E5c" secondAttribute="trailing" id="fae-Ks-ozN"/>
+                        <constraint firstItem="jM3-Is-E5c" firstAttribute="top" secondItem="aS3-dd-z57" secondAttribute="top" id="9Mp-dT-eik"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nQm-XO-YPy"/>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.058823529411764705" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rp3-qN-tGc" secondAttribute="trailing" id="JlD-Cy-V3U"/>
+                <constraint firstItem="aS3-dd-z57" firstAttribute="top" secondItem="rp3-qN-tGc" secondAttribute="bottom" constant="11.01" id="NzV-1c-Ro1"/>
+                <constraint firstItem="rp3-qN-tGc" firstAttribute="top" secondItem="nQm-XO-YPy" secondAttribute="top" id="HsI-Gb-KiZ"/>
+                <constraint firstItem="aS3-dd-z57" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" constant="14.99" id="nnN-3E-8SH"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="aS3-dd-z57" secondAttribute="trailing" constant="14.96" id="UYB-H2-ELB"/>
+                <constraint firstItem="rp3-qN-tGc" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="Ry7-JC-9x4"/>
+            </constraints>
+            <point key="canvasLocation" x="178" y="-42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quickloginItemdataPath" width="66" height="30"/>
+        <image name="jjzyShowAssitant" width="10" height="18"/>
+    </resources>
+</document>

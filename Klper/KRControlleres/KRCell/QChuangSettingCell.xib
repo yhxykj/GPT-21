@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="2v9-bM-2tz" customClass="QChuangSettingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2v9-bM-2tz" id="xhN-Ic-b4E">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-fj-Tgd">
+                        <rect key="frame" x="16" y="12" width="315" height="187"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4s-KY-MFG">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="187"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的免费3条消息已用完，请解锁VIP无限聊天" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaF-gY-ON8">
+                                <rect key="frame" x="19" y="19.999999999999996" width="276" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-j9-aN7">
+                                <rect key="frame" x="19" y="74" width="277" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="graphicsModityLijiqianjin"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="2v9-bM-2tz" eventType="touchUpInside" id="M9M-5h-mdI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8b-9t-17k">
+                                <rect key="frame" x="19" y="128" width="277" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chuangPrefix_2k"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="2v9-bM-2tz" eventType="touchUpInside" id="VNg-jd-eGw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G8b-9t-17k" secondAttribute="trailing" constant="19.01" id="aj4-0B-fTs"/>
+                            <constraint firstAttribute="bottom" secondItem="G8b-9t-17k" secondAttribute="bottom" constant="16.99" id="YEM-q0-H7A"/>
+                            <constraint firstItem="k4s-KY-MFG" firstAttribute="leading" secondItem="jf3-fj-Tgd" secondAttribute="leading" id="mOj-6e-uxN"/>
+                            <constraint firstAttribute="trailing" secondItem="k4s-KY-MFG" secondAttribute="trailing" id="rAi-mB-679"/>
+                            <constraint firstItem="ySs-j9-aN7" firstAttribute="leading" secondItem="jf3-fj-Tgd" secondAttribute="leading" constant="19.01" id="PrK-UL-uRS"/>
+                            <constraint firstAttribute="trailing" secondItem="ySs-j9-aN7" secondAttribute="trailing" constant="19.02" id="d7V-ih-ffb"/>
+                            <constraint firstItem="k4s-KY-MFG" firstAttribute="top" secondItem="jf3-fj-Tgd" secondAttribute="top" id="yr2-MD-Qqm"/>
+                            <constraint firstAttribute="height" constant="187.02" id="bKS-Aw-aB8"/>
+                            <constraint firstAttribute="bottom" secondItem="k4s-KY-MFG" secondAttribute="bottom" id="0Ri-xx-dMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="RaF-gY-ON8" secondAttribute="trailing" constant="19.99" id="1Nd-lQ-Pz6"/>
+                            <constraint firstItem="RaF-gY-ON8" firstAttribute="leading" secondItem="jf3-fj-Tgd" secondAttribute="leading" constant="19.01" id="ixS-tl-Ohr"/>
+                            <constraint firstItem="RaF-gY-ON8" firstAttribute="top" secondItem="jf3-fj-Tgd" secondAttribute="top" constant="20.05" id="B2H-3Q-qT8"/>
+                            <constraint firstAttribute="bottom" secondItem="ySs-j9-aN7" secondAttribute="bottom" constant="70.98" id="npD-xJ-3s6"/>
+                            <constraint firstItem="G8b-9t-17k" firstAttribute="leading" secondItem="jf3-fj-Tgd" secondAttribute="leading" constant="18.98" id="JUf-6S-uAa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jf3-fj-Tgd" firstAttribute="leading" secondItem="xhN-Ic-b4E" secondAttribute="leading" constant="15.99" id="XXL-9a-17l"/>
+                    <constraint firstItem="jf3-fj-Tgd" firstAttribute="top" secondItem="xhN-Ic-b4E" secondAttribute="top" constant="12.05" id="hAv-ls-VLi"/>
+                    <constraint firstAttribute="bottom" secondItem="jf3-fj-Tgd" secondAttribute="bottom" constant="11.99" id="VUC-jJ-kB9"/>
+                    <constraint firstAttribute="trailing" secondItem="jf3-fj-Tgd" secondAttribute="trailing" constant="43.97" id="mdl-gb-O1a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Vax-XN-W8q"/>
+            <connections>
+                <outlet property="label" destination="RaF-gY-ON8" id="FM3-PW-9JQ"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chuangPrefix_2k" width="251" height="42"/>
+        <image name="graphicsModityLijiqianjin" width="251" height="42"/>
+    </resources>
+</document>

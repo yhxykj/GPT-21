@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modityCreateOllection" translatesAutoresizingMaskIntoConstraints="NO" id="eng-DF-88U">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoT-o7-j8g">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="avatarChuang"/>
+                    <connections>
+                        <action selector="_nextClick" destination="uFB-kS-9V7" eventType="touchUpInside" id="6nP-2i-fyB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrK-lT-Hjf">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54.98" id="1oJ-Vf-0An"/>
+                        <constraint firstAttribute="height" constant="44.01" id="jjV-EP-RJJ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="jjzyShowAssitant"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="uFB-kS-9V7" eventType="touchUpInside" id="24n-z6-xXW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nQm-XO-YPy"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DrK-lT-Hjf" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" constant="9.99" id="3o0-Bj-IWS"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="SoT-o7-j8g" secondAttribute="trailing" constant="46.01" id="Hwl-wW-wdD"/>
+                <constraint firstItem="DrK-lT-Hjf" firstAttribute="top" secondItem="nQm-XO-YPy" secondAttribute="top" id="e6f-ua-8R5"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="eng-DF-88U" secondAttribute="trailing" id="e7g-iI-heu"/>
+                <constraint firstAttribute="bottom" secondItem="eng-DF-88U" secondAttribute="bottom" id="BRN-YP-lAs"/>
+                <constraint firstItem="eng-DF-88U" firstAttribute="top" secondItem="pTM-fi-oZd" secondAttribute="top" id="nJ3-SX-XJQ"/>
+                <constraint firstItem="SoT-o7-j8g" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" constant="45.99" id="SyQ-QU-qvM"/>
+                <constraint firstItem="eng-DF-88U" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="1yP-lj-Mxl"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="bottom" secondItem="SoT-o7-j8g" secondAttribute="bottom" constant="20.02" id="9gm-Nh-wq1"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jjzyShowAssitant" width="10" height="18"/>
+        <image name="modityCreateOllection" width="390" height="844"/>
+        <image name="avatarChuang" width="298" height="54"/>
+    </resources>
+</document>

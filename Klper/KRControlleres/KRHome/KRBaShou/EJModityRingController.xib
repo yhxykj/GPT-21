@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="EJModityRingController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="CMw-4v-ljB" id="Wvs-of-SVr"/>
+                <outlet property="newButton" destination="KZd-v2-xyJ" id="KjC-ul-g3f"/>
+                <outlet property="titleView" destination="YQ4-HA-Osi" id="VJP-bG-5iJ"/>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kZ-4p-O7H">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI助手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-Z4-FCy">
+                            <rect key="frame" x="169.66666666666666" y="11.666666666666664" width="50.666666666666657" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-ux-jGq">
+                            <rect key="frame" x="330" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.01" id="d1A-kR-trl"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="jiaoWelcome"/>
+                            <connections>
+                                <action selector="minebuttonClick:" destination="uFB-kS-9V7" eventType="touchUpInside" id="hvq-vH-UF7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DCq-ux-jGq" secondAttribute="bottom" id="9o8-UN-q9f"/>
+                        <constraint firstItem="Nac-Z4-FCy" firstAttribute="centerX" secondItem="6kZ-4p-O7H" secondAttribute="centerX" id="GjN-9J-nXN"/>
+                        <constraint firstAttribute="trailing" secondItem="DCq-ux-jGq" secondAttribute="trailing" constant="4.98" id="6uV-9q-FRD"/>
+                        <constraint firstAttribute="height" constant="43.98" id="p3l-tD-Lae"/>
+                        <constraint firstItem="Nac-Z4-FCy" firstAttribute="centerY" secondItem="6kZ-4p-O7H" secondAttribute="centerY" id="5TT-4H-jgC"/>
+                        <constraint firstItem="DCq-ux-jGq" firstAttribute="top" secondItem="6kZ-4p-O7H" secondAttribute="top" id="Dym-jc-VMJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQ4-HA-Osi">
+                    <rect key="frame" x="0.0" y="91" width="390" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44.01" id="9D2-Pq-b9j"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CMw-4v-ljB">
+                    <rect key="frame" x="0.0" y="135" width="390" height="675"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lh0-w9-9vo">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZd-v2-xyJ">
+                    <rect key="frame" x="308" y="727" width="66" height="66"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="copy_88LaunchChoose"/>
+                    <connections>
+                        <action selector="newAdd:" destination="uFB-kS-9V7" eventType="touchUpInside" id="7Qx-Hi-Mhb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nQm-XO-YPy"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="KZd-v2-xyJ" secondAttribute="trailing" constant="16.01" id="RDq-YM-YKT"/>
+                <constraint firstItem="CMw-4v-ljB" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="k9u-2u-mVG"/>
+                <constraint firstItem="YQ4-HA-Osi" firstAttribute="leading" secondItem="pTM-fi-oZd" secondAttribute="leading" id="vNy-DU-b7C"/>
+                <constraint firstAttribute="trailing" secondItem="6kZ-4p-O7H" secondAttribute="trailing" id="dOs-Gu-b0M"/>
+                <constraint firstItem="6kZ-4p-O7H" firstAttribute="top" secondItem="nQm-XO-YPy" secondAttribute="top" id="RsZ-WR-f9i"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="bottom" secondItem="CMw-4v-ljB" secondAttribute="bottom" id="YMC-se-xYR"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="bottom" secondItem="KZd-v2-xyJ" secondAttribute="bottom" constant="17.01" id="DqD-7S-rYq"/>
+                <constraint firstItem="CMw-4v-ljB" firstAttribute="top" secondItem="YQ4-HA-Osi" secondAttribute="bottom" id="ErI-D6-O8x"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="YQ4-HA-Osi" secondAttribute="trailing" id="DuM-sN-jpC"/>
+                <constraint firstAttribute="trailing" secondItem="CMw-4v-ljB" secondAttribute="trailing" id="EDl-eD-apz"/>
+                <constraint firstItem="YQ4-HA-Osi" firstAttribute="top" secondItem="6kZ-4p-O7H" secondAttribute="bottom" id="dTe-qc-dhu"/>
+                <constraint firstItem="6kZ-4p-O7H" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="4in-D4-AWj"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="-14.218009478672984"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="copy_88LaunchChoose" width="66" height="66"/>
+        <image name="jiaoWelcome" width="32" height="32"/>
+    </resources>
+</document>
