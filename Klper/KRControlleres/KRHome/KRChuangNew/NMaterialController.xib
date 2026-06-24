@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="NMaterialController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="w8x-oA-SHm" id="0Yf-2y-MH0"/>
+                <outlet property="titleView" destination="Yub-ZB-1vr" id="kv1-Nf-if3"/>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcQ-mo-PEb">
+                    <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-oN-x4f">
+                            <rect key="frame" x="315" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.99" id="Ul3-cH-gyn"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="jiaoWelcome"/>
+                            <connections>
+                                <action selector="minebuttonClick:" destination="uFB-kS-9V7" eventType="touchUpInside" id="HnG-p0-2Mx"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI创作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-Zm-sPV">
+                            <rect key="frame" x="162.33333333333334" y="11.666666666666664" width="50.666666666666657" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ONp-oN-x4f" secondAttribute="bottom" id="gYS-cG-obH"/>
+                        <constraint firstAttribute="height" constant="44.04" id="tUf-8I-Bs2"/>
+                        <constraint firstItem="Bxf-Zm-sPV" firstAttribute="centerX" secondItem="gcQ-mo-PEb" secondAttribute="centerX" id="KcI-EM-KUm"/>
+                        <constraint firstItem="ONp-oN-x4f" firstAttribute="top" secondItem="gcQ-mo-PEb" secondAttribute="top" id="eTW-BG-Y9S"/>
+                        <constraint firstItem="Bxf-Zm-sPV" firstAttribute="centerY" secondItem="gcQ-mo-PEb" secondAttribute="centerY" id="vAP-ox-pfg"/>
+                        <constraint firstAttribute="trailing" secondItem="ONp-oN-x4f" secondAttribute="trailing" constant="4.99" id="u1b-8Q-M6f"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="w8x-oA-SHm">
+                    <rect key="frame" x="0.0" y="143" width="375" height="669"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vkc-0l-WbV">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="uFB-kS-9V7" id="ice-pR-PVC"/>
+                        <outlet property="delegate" destination="uFB-kS-9V7" id="yBB-3w-LbD"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yub-ZB-1vr">
+                    <rect key="frame" x="0.0" y="94" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44.01" id="vUT-TG-67k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vqZ-VB-qSw"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vqZ-VB-qSw" firstAttribute="trailing" secondItem="Yub-ZB-1vr" secondAttribute="trailing" id="N8G-0D-SFN"/>
+                <constraint firstItem="vqZ-VB-qSw" firstAttribute="trailing" secondItem="w8x-oA-SHm" secondAttribute="trailing" id="wAc-Zz-DuJ"/>
+                <constraint firstItem="w8x-oA-SHm" firstAttribute="leading" secondItem="vqZ-VB-qSw" secondAttribute="leading" id="CJS-M7-inC"/>
+                <constraint firstItem="gcQ-mo-PEb" firstAttribute="leading" secondItem="pTM-fi-oZd" secondAttribute="leading" id="3Rg-sj-Yqj"/>
+                <constraint firstAttribute="bottom" secondItem="w8x-oA-SHm" secondAttribute="bottom" id="NRM-io-G6L"/>
+                <constraint firstItem="gcQ-mo-PEb" firstAttribute="top" secondItem="vqZ-VB-qSw" secondAttribute="top" id="SRP-NY-EMh"/>
+                <constraint firstItem="w8x-oA-SHm" firstAttribute="top" secondItem="gcQ-mo-PEb" secondAttribute="bottom" constant="49.03" id="RWg-Ki-qgT"/>
+                <constraint firstItem="Yub-ZB-1vr" firstAttribute="leading" secondItem="vqZ-VB-qSw" secondAttribute="leading" id="WxY-cU-CHE"/>
+                <constraint firstItem="Yub-ZB-1vr" firstAttribute="top" secondItem="gcQ-mo-PEb" secondAttribute="bottom" id="aYI-Kc-lYk"/>
+                <constraint firstAttribute="trailing" secondItem="gcQ-mo-PEb" secondAttribute="trailing" id="3gq-v6-Paf"/>
+            </constraints>
+            <point key="canvasLocation" x="128.80000000000001" y="-11.083743842364532"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiaoWelcome" width="32" height="32"/>
+    </resources>
+</document>

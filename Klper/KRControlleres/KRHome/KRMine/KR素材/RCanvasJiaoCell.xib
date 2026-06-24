@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7T2-fZ-sVj" customClass="RCanvasJiaoCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openPrefix_dv" translatesAutoresizingMaskIntoConstraints="NO" id="taa-tS-HhN">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c20-Xt-tt7">
+                        <rect key="frame" x="133" y="0.0" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47.01" id="xHQ-lG-2Qx"/>
+                            <constraint firstAttribute="height" constant="47.01" id="k4v-hj-65V"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="layoutNormalNumber"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7LZ-bg-PD3"/>
+            <constraints>
+                <constraint firstItem="c20-Xt-tt7" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="Kcd-VE-DHB"/>
+                <constraint firstAttribute="bottom" secondItem="taa-tS-HhN" secondAttribute="bottom" id="S2h-i9-Z7N"/>
+                <constraint firstAttribute="trailing" secondItem="c20-Xt-tt7" secondAttribute="trailing" id="Ing-c0-QVg"/>
+                <constraint firstItem="taa-tS-HhN" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="40H-y5-XKr"/>
+                <constraint firstAttribute="trailing" secondItem="taa-tS-HhN" secondAttribute="trailing" id="Y5a-1j-xv9"/>
+                <constraint firstItem="taa-tS-HhN" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="Ofz-6j-fRa"/>
+            </constraints>
+            <size key="customSize" width="180" height="247"/>
+            <connections>
+                <outlet property="bgImage" destination="taa-tS-HhN" id="jfm-Tz-VLj"/>
+                <outlet property="button" destination="c20-Xt-tt7" id="lQ3-KL-NAV"/>
+            </connections>
+            <point key="canvasLocation" x="230.53435114503816" y="58.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="openPrefix_dv" width="168" height="227"/>
+        <image name="layoutNormalNumber" width="25" height="25"/>
+    </resources>
+</document>
