@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qYl-Zd-fXm" customClass="RARelationChatView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYr-l8-Lmb">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FYr-l8-Lmb" firstAttribute="top" secondItem="qYl-Zd-fXm" secondAttribute="top" id="92J-j9-2WQ"/>
+                <constraint firstAttribute="trailing" secondItem="FYr-l8-Lmb" secondAttribute="trailing" id="433-2K-I7p"/>
+                <constraint firstAttribute="bottom" secondItem="FYr-l8-Lmb" secondAttribute="bottom" id="iQF-fG-3Mu"/>
+                <constraint firstItem="FYr-l8-Lmb" firstAttribute="leading" secondItem="qYl-Zd-fXm" secondAttribute="leading" id="wQz-of-8fA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImage" destination="FYr-l8-Lmb" id="TEH-ql-NWK"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="205.98591549295776"/>
+        </view>
+    </objects>
+</document>

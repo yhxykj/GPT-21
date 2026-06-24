@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="2v9-bM-2tz" customClass="NWUItemdataCell" customModule="Klper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2v9-bM-2tz" id="xhN-Ic-b4E">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alamofireItemdata" translatesAutoresizingMaskIntoConstraints="NO" id="gIS-1L-KWb">
+                        <rect key="frame" x="15" y="15.666666666666664" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="CEP-6a-NOe"/>
+                            <constraint firstAttribute="height" constant="43" id="Cah-Gb-8mW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voy-r8-PCd">
+                        <rect key="frame" x="69" y="15" width="37.333333333333343" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="v1l-Bt-GQZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn5-4Q-McT">
+                        <rect key="frame" x="69" y="41" width="35.333333333333343" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sn5-4Q-McT" firstAttribute="top" secondItem="voy-r8-PCd" secondAttribute="bottom" constant="5" id="1Z6-OF-bJb"/>
+                    <constraint firstItem="Sn5-4Q-McT" firstAttribute="leading" secondItem="gIS-1L-KWb" secondAttribute="trailing" constant="11" id="7CA-p3-SkN"/>
+                    <constraint firstItem="gIS-1L-KWb" firstAttribute="leading" secondItem="xhN-Ic-b4E" secondAttribute="leading" constant="14.970000000000001" id="CAJ-PB-ody"/>
+                    <constraint firstItem="voy-r8-PCd" firstAttribute="top" secondItem="xhN-Ic-b4E" secondAttribute="top" constant="15" id="e5m-QJ-A56"/>
+                    <constraint firstItem="voy-r8-PCd" firstAttribute="leading" secondItem="gIS-1L-KWb" secondAttribute="trailing" constant="11" id="eGD-if-vMw"/>
+                    <constraint firstItem="gIS-1L-KWb" firstAttribute="centerY" secondItem="xhN-Ic-b4E" secondAttribute="centerY" id="v0Z-Ua-ier"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Vax-XN-W8q"/>
+            <connections>
+                <outlet property="bgImage" destination="gIS-1L-KWb" id="vFc-RQ-fCF"/>
+                <outlet property="cell_desc" destination="Sn5-4Q-McT" id="6v8-5M-qt1"/>
+                <outlet property="cell_title" destination="voy-r8-PCd" id="ZK1-hi-s8g"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="11.971830985915494"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="alamofireItemdata" width="32" height="31"/>
+    </resources>
+</document>

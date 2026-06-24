@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qYl-Zd-fXm" customClass="IWorkView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoR-PU-bA7">
+                    <rect key="frame" x="0.0" y="336" width="393" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class__Ortrait" translatesAutoresizingMaskIntoConstraints="NO" id="dg5-Pv-D7a">
+                            <rect key="frame" x="161.66666666666666" y="10" width="70" height="71"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片生成中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xox-X8-U9X">
+                            <rect key="frame" x="146" y="111" width="101" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.98" id="J4T-PO-cwZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（返回不会中断生成，可在我的作品查看）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zye-gQ-JND">
+                            <rect key="frame" x="60.666666666666657" y="143" width="272" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Zye-gQ-JND" firstAttribute="top" secondItem="xox-X8-U9X" secondAttribute="bottom" constant="7.98" id="cYM-yQ-y1a"/>
+                        <constraint firstAttribute="height" constant="180.02" id="svg-LV-PYl"/>
+                        <constraint firstItem="Zye-gQ-JND" firstAttribute="centerX" secondItem="UoR-PU-bA7" secondAttribute="centerX" id="ScJ-oB-ypd"/>
+                        <constraint firstItem="xox-X8-U9X" firstAttribute="centerX" secondItem="UoR-PU-bA7" secondAttribute="centerX" id="mMk-c4-f0N"/>
+                        <constraint firstItem="dg5-Pv-D7a" firstAttribute="top" secondItem="UoR-PU-bA7" secondAttribute="top" constant="10.01" id="o3z-Pe-XTJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Zye-gQ-JND" secondAttribute="bottom" constant="19.98" id="g9M-cw-5xt"/>
+                        <constraint firstItem="dg5-Pv-D7a" firstAttribute="centerX" secondItem="UoR-PU-bA7" secondAttribute="centerX" id="ZrW-Xu-5sz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8mq-LT-xTQ"/>
+            <constraints>
+                <constraint firstItem="8mq-LT-xTQ" firstAttribute="trailing" secondItem="UoR-PU-bA7" secondAttribute="trailing" id="3TP-Dt-1N4"/>
+                <constraint firstItem="UoR-PU-bA7" firstAttribute="leading" secondItem="8mq-LT-xTQ" secondAttribute="leading" id="TVn-EF-tyq"/>
+                <constraint firstItem="UoR-PU-bA7" firstAttribute="centerY" secondItem="qYl-Zd-fXm" secondAttribute="centerY" id="H5B-Ws-eOx"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="Zye-gQ-JND" id="IR6-Um-NjK"/>
+                <outlet property="loadImageview" destination="dg5-Pv-D7a" id="THc-jm-GYW"/>
+                <outlet property="titleLabel" destination="xox-X8-U9X" id="TzD-MM-URl"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="class__Ortrait" width="70" height="71"/>
+    </resources>
+</document>

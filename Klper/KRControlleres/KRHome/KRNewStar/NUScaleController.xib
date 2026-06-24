@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="NUScaleController" customModule="Klper" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="jXX-fX-PSk" id="j9u-40-6tj"/>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layoutBack" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-OY-ADd">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-z4-3UM">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="555" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiE-B8-vrA">
+                            <rect key="frame" x="16" y="0.0" width="68" height="39"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="对话记录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-ym-Md7">
+                            <rect key="frame" x="333" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.009999999999998" id="1s2-w0-ZX0"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="jiaoWelcome"/>
+                            <connections>
+                                <action selector="minebuttonClick:" destination="uFB-kS-9V7" eventType="touchUpInside" id="iSO-AQ-DyP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="yiE-B8-vrA" firstAttribute="leading" secondItem="ns4-z4-3UM" secondAttribute="leading" constant="16" id="8w1-9x-RX9"/>
+                        <constraint firstItem="yiE-B8-vrA" firstAttribute="top" secondItem="ns4-z4-3UM" secondAttribute="top" id="Bx7-ij-MCp"/>
+                        <constraint firstAttribute="height" constant="43.990000000000002" id="GBX-qM-Jpw"/>
+                        <constraint firstAttribute="bottom" secondItem="6IU-ym-Md7" secondAttribute="bottom" id="UjL-b2-wbf"/>
+                        <constraint firstAttribute="bottom" secondItem="yiE-B8-vrA" secondAttribute="bottom" constant="5.0099999999999998" id="Ulv-id-4tT"/>
+                        <constraint firstItem="6IU-ym-Md7" firstAttribute="top" secondItem="ns4-z4-3UM" secondAttribute="top" id="ZWt-xr-MYE"/>
+                        <constraint firstAttribute="trailing" secondItem="6IU-ym-Md7" secondAttribute="trailing" constant="4.9900000000000002" id="sHp-8z-9eU"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-fX-PSk">
+                    <rect key="frame" x="0.0" y="111" width="393" height="702"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="uFB-kS-9V7" id="kqw-ys-Icx"/>
+                        <outlet property="delegate" destination="uFB-kS-9V7" id="RL3-Gv-Le1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nQm-XO-YPy"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="bcz-OY-ADd" secondAttribute="trailing" id="2Yb-gN-O2x"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="ns4-z4-3UM" secondAttribute="trailing" id="3uq-1s-6L3"/>
+                <constraint firstItem="jXX-fX-PSk" firstAttribute="top" secondItem="ns4-z4-3UM" secondAttribute="bottom" constant="8.0199999999999996" id="DQT-Ea-bJh"/>
+                <constraint firstItem="ns4-z4-3UM" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="EpQ-5w-QcG"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="jXX-fX-PSk" secondAttribute="trailing" id="FPj-Ge-4rX"/>
+                <constraint firstAttribute="bottom" secondItem="bcz-OY-ADd" secondAttribute="bottom" id="HWG-l1-Z21"/>
+                <constraint firstItem="bcz-OY-ADd" firstAttribute="top" secondItem="pTM-fi-oZd" secondAttribute="top" id="ONj-tl-Bvf"/>
+                <constraint firstItem="ns4-z4-3UM" firstAttribute="top" secondItem="nQm-XO-YPy" secondAttribute="top" id="Rof-n5-r69"/>
+                <constraint firstItem="jXX-fX-PSk" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="Stn-qr-0KZ"/>
+                <constraint firstItem="bcz-OY-ADd" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="ikh-8i-AYa"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="bottom" secondItem="jXX-fX-PSk" secondAttribute="bottom" constant="4.9800000000000004" id="w20-n7-qhK"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="-13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiaoWelcome" width="32" height="32"/>
+        <image name="layoutBack" width="390" height="844"/>
+    </resources>
+</document>

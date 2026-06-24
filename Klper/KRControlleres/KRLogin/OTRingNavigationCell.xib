@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7T2-fZ-sVj" customClass="OTRingNavigationCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class_h5Insert" translatesAutoresizingMaskIntoConstraints="NO" id="6KK-n9-90o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abk-vX-OSR">
+                        <rect key="frame" x="22" y="523" width="331" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="107.98" id="GyD-T7-cxJ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="freeSbpkFree"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7LZ-bg-PD3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Abk-vX-OSR" secondAttribute="trailing" constant="21.98" id="v4v-un-nyK"/>
+                <constraint firstAttribute="bottom" secondItem="Abk-vX-OSR" secondAttribute="bottom" constant="36.02" id="IxA-HU-G9q"/>
+                <constraint firstItem="6KK-n9-90o" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="ELU-B1-qGV"/>
+                <constraint firstItem="Abk-vX-OSR" firstAttribute="centerX" secondItem="7T2-fZ-sVj" secondAttribute="centerX" id="WkY-u7-p5R"/>
+                <constraint firstItem="Abk-vX-OSR" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" constant="21.98" id="sgY-RM-i8X"/>
+                <constraint firstAttribute="trailing" secondItem="6KK-n9-90o" secondAttribute="trailing" id="zyB-kf-iRt"/>
+                <constraint firstItem="6KK-n9-90o" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="ysz-Yb-M94"/>
+                <constraint firstAttribute="bottom" secondItem="6KK-n9-90o" secondAttribute="bottom" id="PuR-lA-bcW"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="6KK-n9-90o" id="GKB-6v-uJU"/>
+                <outlet property="button" destination="Abk-vX-OSR" id="xau-uj-DzR"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="freeSbpkFree" width="306" height="54"/>
+        <image name="class_h5Insert" width="390" height="844"/>
+    </resources>
+</document>

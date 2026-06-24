@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner" customClass="NZStoreMyloadingController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="VFy-NE-rym" id="zLg-m1-fYQ"/>
+                <outlet property="view" destination="pTM-fi-oZd" id="rRS-Tp-VVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pTM-fi-oZd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wau-fs-sZI">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3D-fQ-xRr">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.97" id="si8-dj-0OC"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="jjzyShowAssitant"/>
+                            <connections>
+                                <action selector="backClick:" destination="uFB-kS-9V7" eventType="touchUpInside" id="XKx-1n-ZQ9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音色设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-Ni-SnP">
+                            <rect key="frame" x="164" y="12.333333333333327" width="65.333333333333314" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.95" id="pDd-q3-N5t"/>
+                        <constraint firstItem="G3D-fQ-xRr" firstAttribute="top" secondItem="wau-fs-sZI" secondAttribute="top" id="zWi-rj-O7X"/>
+                        <constraint firstItem="f3S-Ni-SnP" firstAttribute="centerX" secondItem="wau-fs-sZI" secondAttribute="centerX" id="ssF-KK-Sef"/>
+                        <constraint firstAttribute="bottom" secondItem="G3D-fQ-xRr" secondAttribute="bottom" id="mHp-1v-2Hu"/>
+                        <constraint firstItem="G3D-fQ-xRr" firstAttribute="centerY" secondItem="wau-fs-sZI" secondAttribute="centerY" id="cd2-hB-PoD"/>
+                        <constraint firstItem="f3S-Ni-SnP" firstAttribute="centerY" secondItem="wau-fs-sZI" secondAttribute="centerY" id="MdO-GJ-2kk"/>
+                        <constraint firstItem="G3D-fQ-xRr" firstAttribute="leading" secondItem="wau-fs-sZI" secondAttribute="leading" id="PhR-qf-gp5"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-NE-rym">
+                    <rect key="frame" x="0.0" y="108" width="393" height="705"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QRp-rp-Pyc">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="uFB-kS-9V7" id="0EC-Hf-XcD"/>
+                        <outlet property="delegate" destination="uFB-kS-9V7" id="Spk-T4-bFH"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nQm-XO-YPy"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VFy-NE-rym" firstAttribute="leading" secondItem="nQm-XO-YPy" secondAttribute="leading" id="AfT-Gr-05A"/>
+                <constraint firstItem="wau-fs-sZI" firstAttribute="top" secondItem="nQm-XO-YPy" secondAttribute="top" id="2BP-OQ-XKq"/>
+                <constraint firstItem="wau-fs-sZI" firstAttribute="leading" secondItem="pTM-fi-oZd" secondAttribute="leading" id="kpg-Yv-fTm"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="bottom" secondItem="VFy-NE-rym" secondAttribute="bottom" constant="5.02" id="zlH-RU-m5A"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="wau-fs-sZI" secondAttribute="trailing" id="fEi-Z2-ZTZ"/>
+                <constraint firstItem="nQm-XO-YPy" firstAttribute="trailing" secondItem="VFy-NE-rym" secondAttribute="trailing" id="Im7-IJ-AVh"/>
+                <constraint firstItem="VFy-NE-rym" firstAttribute="top" secondItem="wau-fs-sZI" secondAttribute="bottom" constant="4.99" id="kiz-WN-5Eq"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jjzyShowAssitant" width="10" height="18"/>
+    </resources>
+</document>

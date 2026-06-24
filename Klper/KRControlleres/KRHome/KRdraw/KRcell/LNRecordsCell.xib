@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7T2-fZ-sVj" customClass="LNRecordsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiaoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tDm-8F-rAH">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedbackFiveWhite" translatesAutoresizingMaskIntoConstraints="NO" id="JEQ-pB-5a9">
+                        <rect key="frame" x="49" y="12" width="21" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-Pp-f4D">
+                        <rect key="frame" x="51" y="93" width="17" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.01" id="eaW-H3-YBt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tDm-8F-rAH" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" id="caa-j2-TIc"/>
+                <constraint firstAttribute="bottom" secondItem="aUP-Pp-f4D" secondAttribute="bottom" constant="5.97" id="fVw-Nt-ocT"/>
+                <constraint firstItem="aUP-Pp-f4D" firstAttribute="centerX" secondItem="7T2-fZ-sVj" secondAttribute="centerX" id="2c6-Jc-vtS"/>
+                <constraint firstItem="tDm-8F-rAH" firstAttribute="leading" secondItem="7T2-fZ-sVj" secondAttribute="leading" id="J11-jN-wqd"/>
+                <constraint firstItem="JEQ-pB-5a9" firstAttribute="top" secondItem="7T2-fZ-sVj" secondAttribute="top" constant="11.96" id="kcU-5n-7Bz"/>
+                <constraint firstAttribute="bottom" secondItem="tDm-8F-rAH" secondAttribute="bottom" id="6To-6G-cfS"/>
+                <constraint firstAttribute="trailing" secondItem="tDm-8F-rAH" secondAttribute="trailing" id="zpa-ob-ek1"/>
+                <constraint firstItem="JEQ-pB-5a9" firstAttribute="centerX" secondItem="7T2-fZ-sVj" secondAttribute="centerX" id="g59-Yf-qE4"/>
+            </constraints>
+            <size key="customSize" width="119" height="119"/>
+            <connections>
+                <outlet property="bgImageToplayout" destination="kcU-5n-7Bz" id="1nJ-96-iGj"/>
+                <outlet property="cell_bg_image" destination="tDm-8F-rAH" id="09d-wY-LWb"/>
+                <outlet property="scale_image" destination="JEQ-pB-5a9" id="5pT-rm-HDp"/>
+                <outlet property="scale_label" destination="aUP-Pp-f4D" id="n6s-TN-yHI"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jiaoIcon" width="61" height="61"/>
+        <image name="feedbackFiveWhite" width="21" height="22"/>
+    </resources>
+</document>
