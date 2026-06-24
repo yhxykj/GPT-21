@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="uFB-kS-9V7" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="u01-61-piV" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="2v9-bM-2tz" customClass="BPhotoOutuCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2v9-bM-2tz" id="xhN-Ic-b4E">
+                <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家庭财务管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDq-JU-LjO">
+                        <rect key="frame" x="20" y="10" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnp-us-2ka">
+                        <rect key="frame" x="16" y="37" width="426" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这个示例中，我们创建了一个包含三个页面的 UIScrollView，并使用 UIPageControl 显示当前页面的指示器。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SZ-ml-l48">
+                                <rect key="frame" x="20" y="16" width="386" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwB-lo-YPM">
+                                <rect key="frame" x="371" y="110" width="55" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55.03" id="LaS-jN-NTA"/>
+                                    <constraint firstAttribute="height" constant="43.99" id="znP-Zc-Hn4"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="shouRing"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6SZ-ml-l48" firstAttribute="leading" secondItem="Jnp-us-2ka" secondAttribute="leading" constant="19.99" id="54n-gb-a5b"/>
+                            <constraint firstAttribute="bottom" secondItem="TwB-lo-YPM" secondAttribute="bottom" id="YHo-k9-fep"/>
+                            <constraint firstItem="6SZ-ml-l48" firstAttribute="top" secondItem="Jnp-us-2ka" secondAttribute="top" constant="15.98" id="7lq-9t-7J4"/>
+                            <constraint firstAttribute="trailing" secondItem="TwB-lo-YPM" secondAttribute="trailing" id="nmt-2P-rUX"/>
+                            <constraint firstAttribute="trailing" secondItem="6SZ-ml-l48" secondAttribute="trailing" constant="19.98" id="qvy-HA-o6m"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Jnp-us-2ka" secondAttribute="bottom" constant="10.01" id="RQZ-SU-A0f"/>
+                    <constraint firstItem="WDq-JU-LjO" firstAttribute="leading" secondItem="xhN-Ic-b4E" secondAttribute="leading" constant="19.99" id="hXC-z5-1XB"/>
+                    <constraint firstAttribute="trailing" secondItem="Jnp-us-2ka" secondAttribute="trailing" constant="15.99" id="UKa-2o-o2m"/>
+                    <constraint firstItem="Jnp-us-2ka" firstAttribute="top" secondItem="WDq-JU-LjO" secondAttribute="bottom" constant="10.01" id="fUG-4p-KVe"/>
+                    <constraint firstItem="Jnp-us-2ka" firstAttribute="leading" secondItem="xhN-Ic-b4E" secondAttribute="leading" constant="16.02" id="rIt-dK-hQ7"/>
+                    <constraint firstItem="WDq-JU-LjO" firstAttribute="top" secondItem="xhN-Ic-b4E" secondAttribute="top" constant="10.05" id="MzZ-8y-iE7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Vax-XN-W8q"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="create_content_label" destination="6SZ-ml-l48" id="uTj-jg-0NA"/>
+                <outlet property="create_label" destination="WDq-JU-LjO" id="B44-Vj-uNW"/>
+                <outlet property="delete_button" destination="TwB-lo-YPM" id="mnl-vQ-7gv"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shouRing" width="14" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
